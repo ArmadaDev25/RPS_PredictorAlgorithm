@@ -1,6 +1,9 @@
-#file imports
+#File Imports
 from choices import avalibleChoices
 from userdata import userChoices
+
+# Python Imports
+import random
 
 # Program start Message
 print('Lets Play Rock, Paper, Scissors')
