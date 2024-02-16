@@ -1,1 +1,1 @@
-choices = ["Rock","Paper","Scissors"]
+avalibleChoices = ["Rock","Paper","Scissors"]
