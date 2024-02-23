@@ -4,4 +4,8 @@
 
 # Function for determining Game Outcome
 def deterRes(pchoice, cchoice):
+    
+    # DeBug Statements
+    print(pchoice)
+    print(cchoice)
     print("Debug")
