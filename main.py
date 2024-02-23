@@ -23,5 +23,5 @@ input('Press a Key to Continue...')
 while logicRun:
     userEntry = input("Rock, Paper, or Scissors?")
     
-    deterRes("hello", "me") # Debug
+    deterRes(userEntry, "me") # Debug
     logicRun = False 
