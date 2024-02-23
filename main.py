@@ -1,10 +1,12 @@
 #File Imports
 from choices import avalibleChoices
-from userdata import userChoices
 from outcomelogic import deterRes
 
 # Python Imports
 import random
+
+# Variables
+userChoices = [] # Holds the User's previous choices
 
 # Program start Message
 print('Lets Play Rock, Paper, Scissors')
