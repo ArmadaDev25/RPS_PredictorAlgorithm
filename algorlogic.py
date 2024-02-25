@@ -2,7 +2,7 @@
 
 # Importd the avalibleChoices array from the choices file
 # Used to determine which choice the Algorithm picked
-import avalibleChoices from choices
+from choices import avalibleChoices 
 
 # Python Imports
 import random
@@ -10,6 +10,8 @@ import random
 def makeRandomChoice():
     currentChoice = None
     # Will generate a number between 0 and 2 which corresponds to an index in the avalibleChoices array
-    currentChoice = random.randint(0,2)
+    currentChoice = avalibleChoices[random.randint(0,2)]
     print(currentChoice)
 
+#Debug to make sure the Function Works on its own before adding it into the main program
+makeRandomChoice()
