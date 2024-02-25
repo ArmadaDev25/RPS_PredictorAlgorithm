@@ -2,8 +2,8 @@
 from choices import avalibleChoices
 from outcomelogic import deterRes
 
-# Python Imports
-import random
+
+
 
 # Variables
 userChoices = [] # Holds the User's previous choices
