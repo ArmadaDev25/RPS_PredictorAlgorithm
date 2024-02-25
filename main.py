@@ -1,7 +1,7 @@
 #File Imports
 from choices import avalibleChoices
 from outcomelogic import deterRes
-
+from algorlogic import makeRandomChoice
 
 
 
@@ -22,6 +22,7 @@ input('Press a Key to Continue...')
 # Main Program Loop
 while logicRun:
     userEntry = input("Rock, Paper, or Scissors?")
-    
+    algorEntry = makeRandomChoice()
     deterRes(userEntry, "me") # Debug
+    print(algorEntry) # Debug
     logicRun = False 
