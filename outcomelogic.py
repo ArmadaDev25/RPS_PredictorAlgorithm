@@ -8,6 +8,13 @@ def deterRes(pchoice, cchoice):
     if pchoice == cchoice:
         print("its a tie")
     else:
+        match pchoice:
+            case "Rock":
+                print("user choose rock")
+            case "Paper":
+                print("user choose paper")
+            case "Scissors":
+                print("user choose scissors")
         print("not a tie")
 
     # DeBug Statements
