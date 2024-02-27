@@ -23,6 +23,6 @@ input('Press a Key to Continue...')
 while logicRun:
     userEntry = input("Rock, Paper, or Scissors?")
     algorEntry = makeRandomChoice()
-    deterRes(userEntry, "me") # Debug
+    deterRes(userEntry, userEntry) # Sends the Algorithm and the users choices into the function that determines the outcome
     print(algorEntry) # Debug
     logicRun = False 
