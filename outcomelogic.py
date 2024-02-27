@@ -5,6 +5,11 @@
 # Function for determining Game Outcome
 def deterRes(pchoice, cchoice):
     
+    if pchoice == cchoice:
+        print("its a tie")
+    else:
+        print("not a tie")
+
     # DeBug Statements
     print(pchoice)
     print(cchoice)

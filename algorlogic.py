@@ -14,5 +14,3 @@ def makeRandomChoice():
     print(currentChoice)
     return currentChoice
 
-#Debug to make sure the Function Works on its own before adding it into the main program
-makeRandomChoice()
