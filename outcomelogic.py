@@ -5,6 +5,7 @@
 # Function for determining Game Outcome
 def deterRes(pchoice, cchoice):
     
+    # Function starts off by determining if it is a tie or not
     if pchoice == cchoice:
         print("its a tie")
     else:
@@ -23,6 +24,10 @@ def deterRes(pchoice, cchoice):
                     print("You Win")
             case "Scissors":
                 print("user choose scissors")#Debug
+                if cchoice == "Paper":
+                    print("You Lose")
+                elif cchoice == "Rock": 
+                    print("You Win")
         print("not a tie")
 
     # DeBug Statements
