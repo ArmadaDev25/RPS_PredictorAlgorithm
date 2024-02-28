@@ -13,10 +13,14 @@ def deterRes(pchoice, cchoice):
                 print("user choose rock") #Debug
                 if cchoice == "Paper":
                     print("You Lose")
-                else if: # If cchoice = Scissors
-                    print(:"You Win")
+                elif cchoice == "Scissors":
+                    print("You Win")
             case "Paper":
                 print("user choose paper") #Debug
+                if cchoice == "Scissors":
+                    print("You Lose")
+                elif cchoice == "Rock": 
+                    print("You Win")
             case "Scissors":
                 print("user choose scissors")#Debug
         print("not a tie")
