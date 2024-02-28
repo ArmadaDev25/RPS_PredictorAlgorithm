@@ -15,6 +15,7 @@ algorEntry = None
 print('Lets Play Rock, Paper, Scissors')
 input('Press a Key to Continue...')
 
+# Planning Notes
 # Algorithm will pick a random number that will determine which out of the 3 choices it will chose
 # After the Algorithm sufficent data on what the user has previously chosen, it will begin to predict the users choice based on the data
 
