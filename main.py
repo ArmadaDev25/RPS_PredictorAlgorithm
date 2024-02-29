@@ -23,6 +23,7 @@ input('Press a Key to Continue...')
 # Main Program Loop
 while logicRun:
     userEntry = input("Rock, Paper, or Scissors?")
+    # Records the User's choice to then be used by the Algorithm
     userChoices.append(userEntry)
     algorEntry = makeRandomChoice()
     deterRes(userEntry, algorEntry) # Sends the Algorithm's and the User's choices into the function that determines the outcome
