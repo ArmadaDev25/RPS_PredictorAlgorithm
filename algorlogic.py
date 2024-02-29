@@ -3,6 +3,8 @@
 # Importd the avalibleChoices array from the choices file
 # Used to determine which choice the Algorithm picked
 from choices import avalibleChoices 
+# Imported the userChoices array from main
+
 
 # Python Imports
 import random
@@ -24,4 +26,7 @@ def makeRandomChoice():
 
 def calculateChoiceChance(userChoiceArray):
     arraylength = len(userChoiceArray) #Starts by getting the length of the userchoiceArray
+    print(arraylength) #debug
 
+def mainLogicTree(userChoices):
+    calculateChoiceChance(userChoices)

@@ -2,6 +2,7 @@
 from choices import avalibleChoices
 from outcomelogic import deterRes
 from algorlogic import makeRandomChoice
+from algorlogic import mainLogicTree
 
 
 
@@ -10,7 +11,6 @@ userChoices = [] # Holds the User's previous choices
 logicRun = True
 userEntry = None
 algorEntry = None
-roundsPlayed = 10
 
 # Program start Message
 print('Lets Play Rock, Paper, Scissors')
@@ -43,9 +43,13 @@ while logicRun:
     print(userEntry) # Debug
     print("This is the User's previous Choices") # Debug
     print(userChoices) # Debug
+    mainLogicTree(userChoices)
+
+
     userEntry = None
     # Asks if the player wants to play again after 10 rounds
-    if roundsPlayed >= 10:
+    # Determines if 10 rounds have been played by checking the length of the UserChoices Array
+    if len(userChoices) >= 10:
         playAgainChoice = input("Play Again? Type Y or N: ")
         match playAgainChoice:
             case "Y":
