@@ -7,10 +7,21 @@ from choices import avalibleChoices
 # Python Imports
 import random
 
+# Variables
+choiceChance = {
+    "Rock" : 0,
+    "Paper": 0,
+    "Scissors": 0
+
+}
+
 def makeRandomChoice():
     currentChoice = None
     # Will generate a number between 0 and 2 which corresponds to an index in the avalibleChoices array
     currentChoice = avalibleChoices[random.randint(0,2)]
     print(currentChoice)
     return currentChoice
+
+def calculateChoiceChance(userChoiceArray):
+    arraylength = len(userChoiceArray) #Starts by getting the length of the userchoiceArray
 
