@@ -10,6 +10,7 @@ userChoices = [] # Holds the User's previous choices
 logicRun = True
 userEntry = None
 algorEntry = None
+roundsPlayed = 10
 
 # Program start Message
 print('Lets Play Rock, Paper, Scissors')
@@ -32,4 +33,15 @@ while logicRun:
     print("This is the User's previous Choices")
     print(userChoices)
     userEntry = None
-    logicRun = False 
+    # Asks if the player wants to play again after 10 rounds
+    if roundsPlayed >= 10:
+        playAgainChoice = input("Play Again? Type Y or N: ")
+        match playAgainChoice:
+            case "Y":
+                logicRun = True
+            case "N":
+                logicRun = False 
+
+    
+    
+    
