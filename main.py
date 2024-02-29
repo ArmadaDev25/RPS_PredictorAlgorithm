@@ -41,8 +41,8 @@ while logicRun:
     deterRes(userEntry, algorEntry) # Sends the Algorithm's and the User's choices into the function that determines the outcome
     print(algorEntry) # Debug
     print(userEntry) # Debug
-    print("This is the User's previous Choices")
-    print(userChoices)
+    print("This is the User's previous Choices") # Debug
+    print(userChoices) # Debug
     userEntry = None
     # Asks if the player wants to play again after 10 rounds
     if roundsPlayed >= 10:
