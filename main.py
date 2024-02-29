@@ -23,7 +23,18 @@ input('Press a Key to Continue...')
 
 # Main Program Loop
 while logicRun:
-    userEntry = input("Rock, Paper, or Scissors?")
+    isEntryValid = False
+    userEntry = input("Rock, Paper, or Scissors? ")
+    # Checks to Make sure the User input is valid
+    while isEntryValid == False: 
+        if userEntry in avalibleChoices: # Checks to see if what the user entered is in the avalibleChoices Array
+            isEntryValid = True
+        else:
+            isEntryValid = False
+            print("Please Enter a Valid Choice")
+            userEntry = input("Rock, Paper, or Scissors?")
+
+
     # Records the User's choice to then be used by the Algorithm
     userChoices.append(userEntry)
     algorEntry = makeRandomChoice()
