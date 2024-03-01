@@ -45,6 +45,6 @@ def mainLogicTree(userChoices):
         print('The Algorithm choose: ' + currentChoice) # Debug
         return currentChoice
     
-
+  
 
     
