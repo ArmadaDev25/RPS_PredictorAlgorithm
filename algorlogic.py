@@ -25,7 +25,11 @@ def makeRandomChoice():
 
 def calculateChoiceChance(userChoiceArray, lengthOf):
     print("CPU is now Predicting What the User Will Choose")# Debug to show when the algorithm starts to predict what the user will choose
-    print(lengthOf) #debug
+    print("Debug from calculateChoiceChance Function") # Debug
+    print(lengthOf) # Debug
+    for choices in avalibleChoices:
+        choiceChance.update({choices : userChoiceArray.count(choices)})
+    print(choiceChance)
 
 def mainLogicTree(userChoices):
     arraylength = len(userChoices) #Starts by getting the length of the userchoiceArray
