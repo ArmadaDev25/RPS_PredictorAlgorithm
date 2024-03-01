@@ -37,13 +37,14 @@ while logicRun:
 
     # Records the User's choice to then be used by the Algorithm
     userChoices.append(userEntry)
-    algorEntry = makeRandomChoice()
+    algorEntry = mainLogicTree(userChoices)
     deterRes(userEntry, algorEntry) # Sends the Algorithm's and the User's choices into the function that determines the outcome
+    print("Debug From main.py") # Debug
     print(algorEntry) # Debug
     print(userEntry) # Debug
     print("This is the User's previous Choices") # Debug
     print(userChoices) # Debug
-    mainLogicTree(userChoices)
+    
 
 
     userEntry = None

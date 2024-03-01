@@ -24,9 +24,23 @@ def makeRandomChoice():
     print(currentChoice)
     return currentChoice
 
-def calculateChoiceChance(userChoiceArray):
-    arraylength = len(userChoiceArray) #Starts by getting the length of the userchoiceArray
-    print(arraylength) #debug
+def calculateChoiceChance(userChoiceArray, lengthOf):
+    print("CPU is now Predicting What the User Will Choose")# Debug to show when the algorithm starts to predict what the user will choose
+    print(lengthOf) #debug
 
 def mainLogicTree(userChoices):
-    calculateChoiceChance(userChoices)
+    arraylength = len(userChoices) #Starts by getting the length of the userchoiceArray
+    currentChoice = None
+    print(arraylength) # Debug
+    if arraylength >= 10:
+        calculateChoiceChance(userChoices, arraylength)
+        ## This Code is Placeholder Untill the Program is able to make Decisions based on what is predicts the user will choose
+        currentchoice = makeRandomChoice()
+        return currentChoice
+    else:
+        currentchoice = makeRandomChoice()
+        return currentChoice
+    
+
+
+    
