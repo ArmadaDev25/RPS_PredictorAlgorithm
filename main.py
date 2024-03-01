@@ -40,8 +40,11 @@ while logicRun:
     print("Debug From main.py") # Debug
     print(algorEntry) # Debug
     print(userEntry) # Debug
-    print("This is the User's previous Choices") # Debug
+    print("This is the User's previous Choices - According to main.py File") # Debug
     print(userChoices) # Debug
+
+    #Print Statment that shows the Player the Results of the round
+    print("#################", "\n     RESULTS", "\n#################")
     
 
 

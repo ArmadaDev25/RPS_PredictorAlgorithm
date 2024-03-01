@@ -3,33 +3,36 @@
 
 # Function for determining Game Outcome
 def deterRes(pchoice, cchoice):
+    print("DEBUG: Values passed into deterRes Function")
+    print('Player Choice: ', pchoice)
+    print('Algorithm Choice: ', cchoice)
+    
     
     # Function starts off by determining if it is a tie or not
     if pchoice == cchoice:
-        print("its a tie")
+        print("Round Result: It's a tie")
     else:
+        print("DEBUG: Continuing To Match Statment For Round Result") # Debug
         match pchoice:
             case "Rock":
                 print("user choose rock") #Debug
                 if cchoice == "Paper":
-                    print("You Lose")
+                    print("Round Result: You Lose")
                 elif cchoice == "Scissors":
-                    print("You Win")
+                    print("Round Result: You Win")
             case "Paper":
                 print("user choose paper") #Debug
                 if cchoice == "Scissors":
-                    print("You Lose")
+                    print("Round Result: You Lose")
                 elif cchoice == "Rock": 
-                    print("You Win")
+                    print("Round Result: You Win")
             case "Scissors":
                 print("user choose scissors")#Debug
                 if cchoice == "Paper":
-                    print("You Lose")
+                    print("Round Result: You Lose")
                 elif cchoice == "Rock": 
-                    print("You Win")
-        print("not a tie")
+                    print("Round Result: You Win")
+        
 
     # DeBug Statements
-    print(pchoice)
-    print(cchoice)
-    print("Debug")
+    

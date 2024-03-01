@@ -20,7 +20,7 @@ def makeRandomChoice():
     currentChoice = None
     # Will generate a number between 0 and 2 which corresponds to an index in the avalibleChoices array
     currentChoice = avalibleChoices[random.randint(0,2)]
-    print(currentChoice)
+    print('Algorithms Choice Decided From makeRandomChoice function: ', currentChoice)
     return currentChoice
 
 def calculateChoiceChance(userChoiceArray, lengthOf):
