@@ -30,15 +30,19 @@ def calculateChoiceChance(userChoiceArray, lengthOf):
 def mainLogicTree(userChoices):
     arraylength = len(userChoices) #Starts by getting the length of the userchoiceArray
     currentChoice = None
-    print(arraylength) # Debug
+    print("These are the Users Preivious Choices according to the algorlogic.py file") # Debug
+    print(userChoices) # Debug
+    print('Length of the userChoices array: ', arraylength) # Debug
     # If 10 rounds have been played, the Algorithm with change how it chooses between Rock, Paper, and Scissors
     if arraylength >= 10:
         calculateChoiceChance(userChoices, arraylength)
         ## This Code is Placeholder Untill the Program is able to make Decisions based on what is predicts the user will choose
-        currentchoice = makeRandomChoice()
+        currentChoice = makeRandomChoice()
+        print('The Algorithm choose:' + currentChoice) # Debug
         return currentChoice
     else:
-        currentchoice = makeRandomChoice()
+        currentChoice = makeRandomChoice()
+        print('The Algorithm choose: ' + currentChoice) # Debug
         return currentChoice
     
 
