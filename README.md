@@ -10,3 +10,5 @@ There are two methods to do this. You can either run it in a terminal, or run it
 3. Open Up the Visual Studio Code Terminal
 4. Type Python main.py
 5. Hit Enter, and Follow the directions displayed in the terminal
+## Languages Used
+- Python
