@@ -1,9 +1,8 @@
 # This file contains the logic that will drive the Algorithm an its decision making 
 
 # Importd the avalibleChoices array from the choices file
-# Used to determine which choice the Algorithm picked
+# Used to determine which choice the Algorithm can pick
 from choices import avalibleChoices 
-# Imported the userChoices array from main
 
 
 # Python Imports
@@ -32,6 +31,7 @@ def mainLogicTree(userChoices):
     arraylength = len(userChoices) #Starts by getting the length of the userchoiceArray
     currentChoice = None
     print(arraylength) # Debug
+    # If 10 rounds have been played, the Algorithm with change how it chooses between Rock, Paper, and Scissors
     if arraylength >= 10:
         calculateChoiceChance(userChoices, arraylength)
         ## This Code is Placeholder Untill the Program is able to make Decisions based on what is predicts the user will choose

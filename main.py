@@ -34,9 +34,7 @@ while logicRun:
             print("Please Enter a Valid Choice")
             userEntry = input("Rock, Paper, or Scissors?")
 
-
-    # Records the User's choice to then be used by the Algorithm
-    userChoices.append(userEntry)
+    userChoices.append(userEntry) # Records the User's choice to then be used by the Algorithm
     algorEntry = mainLogicTree(userChoices)
     deterRes(userEntry, algorEntry) # Sends the Algorithm's and the User's choices into the function that determines the outcome
     print("Debug From main.py") # Debug
@@ -47,7 +45,7 @@ while logicRun:
     
 
 
-    userEntry = None
+    userEntry = None #Resets the users choice for the next round
     # Asks if the player wants to play again after 10 rounds
     # Determines if 10 rounds have been played by checking the length of the UserChoices Array
     if len(userChoices) >= 10:
