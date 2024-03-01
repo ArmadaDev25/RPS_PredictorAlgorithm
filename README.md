@@ -10,5 +10,10 @@ There are two methods to do this. You can either run it in a terminal, or run it
 3. Open Up the Visual Studio Code Terminal
 4. Type Python main.py
 5. Hit Enter, and Follow the directions displayed in the terminal
+##### Method 2 - Using the Terminal
+1. Open up the terminal, or command prompt, on your computer
+2. Change the current directory that you are in to the RPS_PredictorAlgorithm file
+3. Type python main.py
+4. Hit Enter
 ## Languages Used
 - Python
