@@ -27,8 +27,11 @@ def calculateChoiceChance(userChoiceArray, lengthOf):
     print("CPU is now Predicting What the User Will Choose")# Debug to show when the algorithm starts to predict what the user will choose
     print("Debug from calculateChoiceChance Function") # Debug
     print(lengthOf) # Debug
+    # For loop that Determines the pick percentage for each of the 3 choices
     for choices in avalibleChoices:
-        choiceChance.update({choices : userChoiceArray.count(choices)})
+        occuranceCount = userChoiceArray.count(choices)
+        choiceChance.update({choices : occuranceCount/lengthOf})
+    print("Percent of the time each of the 3 Options were Picked by the player")
     print(choiceChance)
 
 def mainLogicTree(userChoices):
