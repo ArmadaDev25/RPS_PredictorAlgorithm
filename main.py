@@ -36,7 +36,7 @@ while logicRun:
 
     userChoices.append(userEntry) # Records the User's choice to then be used by the Algorithm
     algorEntry = mainLogicTree(userChoices)
-    roundOutcome = deterRes(userEntry, algorEntry) # Sends the Algorithm's and the User's choices into the function that determines the outcome. Then Stores the returned outcome to be displayed to the player
+    roundOutcome = deterRes(userEntry, algorEntry) # Sends the Algorithm's and the User's choices into the function that determines the outcome. Then stores the returned outcome to be displayed to the player
     print("Debug From main.py") # Debug
     print(algorEntry) # Debug
     print(userEntry) # Debug
