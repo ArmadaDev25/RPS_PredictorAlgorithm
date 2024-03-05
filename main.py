@@ -11,6 +11,14 @@ userChoices = [] # Holds the User's previous choices
 logicRun = True
 userEntry = None
 algorEntry = None
+# This variable will hold the user's stats
+
+userStats = {
+    "Win" : 0,
+    "Loss": 0,
+    "Tie": 0
+
+}
 
 # Program start Message
 print('Lets Play Rock, Paper, Scissors')
