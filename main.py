@@ -35,12 +35,12 @@ while logicRun:
     userEntry = input("Rock, Paper, or Scissors? ")
     # Checks to Make sure the User input is valid
     while isEntryValid == False: 
-        if userEntry in avalibleChoices: # Checks to see if what the user entered is in the avalibleChoices Array
-            isEntryValid = True
+        try: 
+            avalibleChoices.index(userEntry)
+        except ValueError:
+            input("Please Input a Valid Choice")
         else:
-            isEntryValid = False
-            print("Please Enter a Valid Choice")
-            userEntry = input("Rock, Paper, or Scissors?")
+            isEntryValid = True
 
     userChoices.append(userEntry) # Records the User's choice to then be used by the Algorithm
     algorEntry = mainLogicTree(userChoices)
