@@ -12,12 +12,10 @@ logicRun = True
 userEntry = None
 algorEntry = None
 # This variable will hold the user's stats
-
 userStats = {
     "Win" : 0,
     "Loss": 0,
     "Tie": 0
-
 }
 
 # Program start Message
@@ -29,9 +27,16 @@ input('Press a Key to Continue...')
 # After the Algorithm sufficent data on what the user has previously chosen, it will begin to predict the users choice based on the data
 
 
+# Function For user input Error Handling 
+def inputErrorHandler():
+    
+
+
 # Main Program Loop
 while logicRun:
     isEntryValid = False
+    inputErrorHandler()
+
     
     # Checks to Make sure the User input is valid
     while isEntryValid == False: 
@@ -68,6 +73,5 @@ while logicRun:
             case "N":
                 logicRun = False 
 
-    
-    
+
     
