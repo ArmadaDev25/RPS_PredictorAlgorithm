@@ -32,13 +32,14 @@ input('Press a Key to Continue...')
 # Main Program Loop
 while logicRun:
     isEntryValid = False
-    userEntry = input("Rock, Paper, or Scissors? ")
+    
     # Checks to Make sure the User input is valid
     while isEntryValid == False: 
+        userEntry = input("Rock, Paper, or Scissors? ")
         try: 
             avalibleChoices.index(userEntry)
         except ValueError:
-            input("Please Input a Valid Choice")
+            print("Value Error: Invalid Choice.")
         else:
             isEntryValid = True
 

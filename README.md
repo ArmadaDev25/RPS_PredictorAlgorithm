@@ -17,3 +17,8 @@ There are two methods to do this. You can either run it in a terminal, or run it
 4. Hit Enter
 ## Languages Used
 - Python
+## Features
+- The ability for a user to play Rock, Paper, Scissors against the computer
+- A Match-Case statment that determines the outcome of each round by using the player's answer as the case argument. Then looking at what the computer picked to determine the final outcome of the round.
+- After 10 rounds, the computer looks at what the player picked in each of the 10 rounds to dertermine the how many times each optioned was picked, and then store that infomation as a percent.   
+
