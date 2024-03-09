@@ -28,24 +28,22 @@ input('Press a Key to Continue...')
 
 
 # Function For user input Error Handling 
-def inputErrorHandler(userInput, data):
-    try: 
-        data.index(userInput)
-    except ValueError:
-        print("Value Error: Invalid Choice.")
-    else:
-        isEntryValid = True
+def inputErrorHandler(arrayData):
+    while (True):
+        userInput = input("Rock, Paper, or Scissors? ")
+        try: 
+            arrayData.index(userInput)
+            break
+        except ValueError:
+            print("Value Error: Invalid Choice.")
+    return userInput
+        
 
 
 
 # Main Program Loop
 while logicRun:
-    isEntryValid = False
-    
-    # Checks to Make sure the User input is valid
-    while isEntryValid == False: 
-        userEntry = input("Rock, Paper, or Scissors? ")
-        inputErrorHandler(userEntry, avalibleChoices)
+    userEntry = inputErrorHandler(avalibleChoices)
        
 
     userChoices.append(userEntry) # Records the User's choice to then be used by the Algorithm
